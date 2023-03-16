@@ -42,8 +42,11 @@ Bekijk de IP adress op digitap of in dit repo onder ```files```
 ![windowsInstall](./images/install06.png)
 ![windowsInstall](./images/install07.png)
 ![windowsInstall](./images/install08.png)
-> als deze stap klaar is zal de machine automatisch rebooten
-![anykey](./images/install09.png)
+
+> als deze stap klaar is zal de machine automatisch rebooten 
+
+![anykey](./images/install09.png)    
+
 
 > ![windowsPsw](./images/install10.png)
 >
@@ -54,5 +57,5 @@ Bekijk de IP adress op digitap of in dit repo onder ```files```
 > - Password must be six or more characters long.
 > - Password must contain characters from three of the following four categories: Uppercase characters - A-Z (Latin alphabet)
 
-![windowsInstall](./images/install11.png
+![windowsInstall](./images/install11.png)
 
