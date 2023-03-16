@@ -32,3 +32,17 @@ Bekijk de IP adress op digitap
 ## 2.2 Huidige Topologie
 
 ![topologie](./images/topologie.png)
+
+## 2.3 De installatie
+
+*power on your VM Machine*
+
+![anykey](./images/anykey.png)
+![windowsInstall](./images/install01.png)
+![windowsInstall](./images/install02.png)
+![windowsInstall](./images/install03.png)
+![windowsInstall](./images/install04.png)
+![windowsInstall](./images/install05.png)
+![windowsInstall](./images/install06.png)
+![windowsInstall](./images/install07.png)
+![windowsInstall](./images/install08.png)
