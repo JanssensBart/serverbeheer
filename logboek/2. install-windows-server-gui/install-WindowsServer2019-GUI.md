@@ -30,7 +30,8 @@ Bekijk de IP adress op digitap of in dit repo onder ```files```
 > example : **ApAdmin2022**
 
 ## 2.2 Huidige Topologie
-![windowsInstall](./images/topologie.png.png)
+
+![topologie](./images/topologie.png)
 
 ## 2.3 De installatie
 
