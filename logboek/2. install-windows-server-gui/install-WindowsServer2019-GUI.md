@@ -29,7 +29,10 @@ Bekijk de IP adress op digitap of in dit repo onder ```files```
 **Paswoorden** zelf te kiezen maar zelf ook bij te houden. 
 > example : **ApAdmin2022**
 
-## 2.2 De installatie
+## 2.2 Huidige Topologie
+![windowsInstall](./images/topologie.png.png)
+
+## 2.3 De installatie
 
 *power on your VM Machine*
 
