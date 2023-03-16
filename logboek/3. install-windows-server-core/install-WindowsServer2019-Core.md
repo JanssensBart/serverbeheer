@@ -46,3 +46,6 @@ Bekijk de IP adress op digitap
 ![windowsInstall](./images/install06.png)
 ![windowsInstall](./images/install07.png)
 ![windowsInstall](./images/install08.png)
+![windowsInstall](./images/install09.png)
+![windowsInstall](./images/install10.png)
+![windowsInstall](./images/install11.png)
