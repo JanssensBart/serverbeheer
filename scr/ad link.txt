@@ -1,0 +1,1 @@
+https://rdr-it.com/en/active-directory-add-a-domain-controller-to-powershell/
