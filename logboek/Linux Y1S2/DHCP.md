@@ -2,13 +2,14 @@
 > Deze tutorial is gebasseerd op de video op Digitap
 > [Link to video](https://learning.ap.be/pluginfile.php/1901464/mod_resource/content/1/installatie%20DHCP%20.MP4)
 
+
 # DCHP op Linux
 
 1. DCHP feature installeren 
 
-´´´
+```bash
 yum install dhcp-server
-´´´
+```
 
 > **Note**
 > Als dhcp reed geïnstalleerd is krijg je de melding
@@ -18,9 +19,9 @@ yum install dhcp-server
 
 2. DHCP configuratie
 
-´´´bash
+```bash
 sudo vi /etc/dhcp/dhcpd.conf
-´´´
+```
 
 ![emptyConfig](./img/settingsEmpty.png)
 
@@ -28,13 +29,13 @@ sudo vi /etc/dhcp/dhcpd.conf
 > We gebruiken het **dhcpd.conf.example** als template
 > je zal gevraagd worden of het origineel mag overschreven worden -> yes
 
-´´´ini
+```bash
 sudo cp /usr/share/doc/dhcp-server/dhcpd.conf.example /etc/dhcp/dhcpd.conf
-´´´
+```
 
-´´´ini
+```bash
 sudo vi /etc/dhcp/dhcpd.conf
-´´´
+```
 
 ## Cleaning up the config file
 ### handige VI commands
@@ -57,7 +58,7 @@ sudo vi /etc/dhcp/dhcpd.conf
 *RESULT*
 ![emptyConfig](./img/settingsEmpty.png)
 
-´´´bash
+```bash
 # option definitions common to all supported networks...
 option domain-name "_______delekkere.be_______";
 option domain-name-servers [SERVER].delekkere.be;
@@ -88,7 +89,7 @@ subnet [172.16.78.0] netmask [255.255.255.0] {
   default-lease-time [3H;]
   max-lease-time [4H;]
 }
-´´´
+```
 
 3. De linux server als router instellen zodat de werkstations op internet kunnen
 
@@ -97,9 +98,9 @@ subnet [172.16.78.0] netmask [255.255.255.0] {
 Na invoer moet dit zichtbaar zijn op de PFSV1 (zie foto)
 
 Commando:
-´´´bash
+```bash
 sysctl -w net.ipv4.ip_forward=1
-´´´
+```
 
 
 
