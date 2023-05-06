@@ -6,7 +6,7 @@
 
 1. DCHP feature installeren 
 
-´´´bash
+´´´
 yum install dhcp-server
 ´´´
 
