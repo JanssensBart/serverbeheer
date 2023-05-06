@@ -55,7 +55,7 @@ sudo vi /etc/dhcp/dhcpd.conf
 | Y           | Undo        |
 | CTRL+r      | Delete      |
 
-*RESULT*
+*EINDRESULAAT*
 
 ![emptyConfig](./img/cleanConf.png)
 
@@ -102,8 +102,6 @@ Commando:
 ```bash
 sysctl -w net.ipv4.ip_forward=1
 ```
-
-
 
 > **Note**
 > De firewall dient (voorlopig) uit te staan om dit werkende te krijgen
