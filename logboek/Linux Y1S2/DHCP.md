@@ -64,8 +64,8 @@ sudo vi /etc/dhcp/dhcpd.conf
 option domain-name "_______delekkere.be_______";
 option domain-name-servers [SERVER].delekkere.be;
 
-default-lease-time [3H];
-max-lease-time [4H];
+default-lease-time [600]; # moeten INT zijn!
+max-lease-time [7200];    # moeten INT zijn!
 
 # Use this to enble / disable dynamic dns updates globally.
 ddns-update-style [standard]; # zet DDNS op standaard, toelaten dat er een DDNS update 
@@ -87,8 +87,8 @@ subnet [172.16.78.0] netmask [255.255.255.0] {
   range [172.16.78.10 172.16.78.30;]                # range waar IP's worden uitgedeeld VAN TOT
   option domain-name-servers [SERVER.delekkere.be;] # specifieer voor welk DNS gebied, mag ook het IP adres zijn.
   option routers [172.16.78.1;]                     # gate-way
-  default-lease-time [3H;]
-  max-lease-time [4H;]
+  default-lease-time [600;]                         # moeten INT zijn!
+  max-lease-time [7200;]                            # moeten INT zijn!
 }
 ```
 
@@ -102,6 +102,26 @@ Commando:
 ```bash
 sysctl -w net.ipv4.ip_forward=1
 ```
+## START DHCP
+
+```bash
+systemctl status dhcpd
+```
+
+```bash
+systemctl start dhcpd
+```
+
+## TROUBLESHOOTING
+
+```bash
+systemctl status dhcpd.service
+```
+
+```bash
+dhcpd -t -cf /etc/dhcp/dhcpd.conf
+```
+
 
 > **Note**
 > De firewall dient (voorlopig) uit te staan om dit werkende te krijgen
