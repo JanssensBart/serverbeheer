@@ -9,6 +9,7 @@
 ´´´bash
 yum install dhcp-server
 ´´´
+
 > **Note**
 > Als dhcp reed geïnstalleerd is krijg je de melding
 > *Package dhcp-server ... is allready installed*
@@ -20,6 +21,7 @@ yum install dhcp-server
 ´´´bash
 sudo vi /etc/dhcp/dhcpd.conf
 ´´´
+
 ![emptyConfig](./img/settingsEmpty.png)
 
 > **Note**
@@ -29,6 +31,7 @@ sudo vi /etc/dhcp/dhcpd.conf
 ´´´ini
 sudo cp /usr/share/doc/dhcp-server/dhcpd.conf.example /etc/dhcp/dhcpd.conf
 ´´´
+
 ´´´ini
 sudo vi /etc/dhcp/dhcpd.conf
 ´´´
@@ -38,6 +41,7 @@ sudo vi /etc/dhcp/dhcpd.conf
 
 *Multi row delete*
 > V , select with arrow keys , D
+
 | **Command** | **Action**  |
 |-------------|-------------|
 | V           | Visual Mode |
@@ -53,7 +57,7 @@ sudo vi /etc/dhcp/dhcpd.conf
 *RESULT*
 ![emptyConfig](./img/settingsEmpty.png)
 
-´´´ini
+´´´bash
 # option definitions common to all supported networks...
 option domain-name "_______delekkere.be_______";
 option domain-name-servers [SERVER].delekkere.be;
@@ -84,7 +88,6 @@ subnet [172.16.78.0] netmask [255.255.255.0] {
   default-lease-time [3H;]
   max-lease-time [4H;]
 }
-
 ´´´
 
 3. De linux server als router instellen zodat de werkstations op internet kunnen
