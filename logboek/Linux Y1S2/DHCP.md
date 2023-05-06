@@ -57,7 +57,7 @@ sudo vi /etc/dhcp/dhcpd.conf
 
 *RESULT*
 
-![emptyConfig](./img/settingsEmpty.png)
+![emptyConfig](./img/cleanConf.png)
 
 ```bash
 # option definitions common to all supported networks...
