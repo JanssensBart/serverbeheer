@@ -61,15 +61,14 @@ sudo vi /etc/dhcp/dhcpd.conf
 
 ```bash
 # option definitions common to all supported networks...
-option domain-name "_______delekkere.be_______";
+option domain-name "delekkere.be";
 option domain-name-servers [SERVER].delekkere.be;
 
 default-lease-time [600]; # moeten INT zijn!
 max-lease-time [7200];    # moeten INT zijn!
 
 # Use this to enble / disable dynamic dns updates globally.
-ddns-update-style [standard]; # zet DDNS op standaard, toelaten dat er een DDNS update 
-gebeurd
+ddns-update-style [standard]; # zet DDNS op standaard, toelaten dat er een DDNS update gebeurd
 
 # If this DHCP server is the official DHCP server for the local
 # network, the authoritative directive should be uncommented.
